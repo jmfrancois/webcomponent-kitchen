@@ -7,7 +7,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 const plugins = [
     new HtmlWebpackPlugin({
-        title: 'My Talend Cloud',
+        title: 'WebComponent kitchen',
         favicon: './src/favicon.png'
     }),
     new HtmlWebpackTagsPlugin({
@@ -24,7 +24,7 @@ module.exports = {
     entry: './src/index.ts',
     output: {
         filename: 'bundle.min.js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
     },
     mode: 'production',
     module: {
