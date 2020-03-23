@@ -21,6 +21,10 @@ export class HelloWorld extends HTMLElement {
         const title = document.createElement('h2');
         title.appendChild(document.createTextNode('Basic component'))
         div.appendChild(title);
+        const source = document.createElement('a');
+        source.setAttribute('href', 'https://github.com/jmfrancois/webcomponent-kitchen/blob/master/src/components/01-helloword/helloworld.ts');
+        source.setAttribute('class', 'source');
+        div.appendChild(source);
         const hello = document.createElement('hello-world');
         div.appendChild(hello);
         container.appendChild(div);

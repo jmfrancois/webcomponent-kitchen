@@ -1,38 +1,5 @@
 body {
     --font-size-base: 14px;
-
-    /* SVG */
-    --svg-xs-size: 0.8rem;
-    --svg-sm-size: 1.2rem;
-    --svg-md-size: 1.6rem;
-    --svg-lg-size: 2.4rem;
-    --svg-xlg-size: 3.2rem;
-
-
-    /* variables  */
-    --gray-base: var(--black);
-    /* --gray-darker: lighten(--gray-base, 13.5%); // #222
-    $gray-dark: lighten($gray-base, 20%); // #333
-    $gray: lighten($gray-base, 33.5%); // #555
-    $gray-light: lighten($gray-base, 46.7%); // #777
-    $gray-lighter: lighten($gray-base, 85%); // #bfbfbf */
-
-    --brand-primary: var(--st-tropaz);
-    /* --brand-primary-lighter: tint(--brand-primary, 25);
-    --brand-primary-light: tint(--brand-primary, 12);
-    --brand-primary-dark: shade(--brand-primary, 12);
-    --brand-primary-darker: shade(--brand-primary, 25); */
-    --brand-secondary: var(--rio-grande);
-    --brand-success: var(--rio-grande);
-    --brand-info: var(--st-tropaz);
-    --brand-warning: var(--lightning-yellow);
-    --brand-danger: var(--chestnut-rose);
-
-    --padding-smaller: 5px;
-    --padding-small:  10px;
-    --padding-normal: 15px;
-    --padding-large:  20px;
-    --padding-larger: 30px;    
 }
 * {
     font-size: 14px;
@@ -45,4 +12,20 @@ html {
     margin: 0;
     padding: 0;
     font-size: 10px;
+}
+.source {
+    display: block;
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.source::before {
+    content: 'source';
+}
+.demo {
+    border: 1px solid gray;
+    margin: 20px;
+    position: relative;
+    padding: 15px;
 }

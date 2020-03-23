@@ -29,6 +29,11 @@ export class HelloEvents extends HTMLElement {
         const title = document.createElement('h2');
         title.appendChild(document.createTextNode('Component dispatching events'));
         div.appendChild(title);
+        const source = document.createElement('a');
+        source.setAttribute('href', 'https://github.com/jmfrancois/webcomponent-kitchen/blob/master/src/components/01-helloevents/helloevents.ts');
+        source.setAttribute('class', 'source');
+        div.appendChild(source);
+
         const p = document.createElement('p');
         p.appendChild(document.createTextNode('This demo show a component with a button and an input inside a shadowRoot'));
         div.appendChild(p)

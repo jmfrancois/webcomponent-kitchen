@@ -32,6 +32,11 @@ export class HelloCallback extends HTMLElement {
         const title = document.createElement('h2');
         title.appendChild(document.createTextNode('Component [dis]connectedCallback'));
         div.appendChild(title);
+        const source = document.createElement('a');
+        source.setAttribute('href', 'https://github.com/jmfrancois/webcomponent-kitchen/blob/master/src/components/03-connectedcb/hellocb.ts');
+        source.setAttribute('class', 'source');
+        div.appendChild(source);
+
         const p = document.createElement('p');
         p.appendChild(document.createTextNode('This demo add a green border using setTimeout inside connectedCallback'));
         p.appendChild(document.createTextNode('And set the border to red on disconnectedCallback'));

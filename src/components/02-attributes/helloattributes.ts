@@ -41,6 +41,10 @@ export class HelloAttributes extends HTMLElement {
         const title = document.createElement('h2');
         title.appendChild(document.createTextNode('Component which listen attribute changed'));
         div.appendChild(title);
+        const source = document.createElement('a');
+        source.setAttribute('href', 'https://github.com/jmfrancois/webcomponent-kitchen/blob/master/src/components/02-attributes/helloattributes.ts');
+        source.setAttribute('class', 'source');
+        div.appendChild(source);
         const hello = document.createElement('hello-attributes');
         const input = document.createElement('input');
         input.setAttribute('placeholder', 'set the name of this component');
